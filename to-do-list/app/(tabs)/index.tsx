@@ -2,13 +2,11 @@ import { StyleSheet } from 'react-native';
 
 import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
-// import exemplo from './exemplo';
 import  Example from './Example';
 
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      {/* <exemplo /> */}
       <Example text='Luis'>Titulo</Example>
       <Example text='Davi'/>
       <Example text='Damis'/>
