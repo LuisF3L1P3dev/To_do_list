@@ -1,9 +1,16 @@
 import { View, Text } from "react-native"
 
-const Example = () =>{
+interface ExampleProps{
+    text?: string;
+    children?: string;
+}
+
+
+const Example = (props: ExampleProps) =>{
     return(
         <View>
-            <Text>Teste</Text>
+            <Text style={{color: 'blue'}}>{props.text}</Text>
+            <Text style={{color: 'red'}}>{props.children}</Text>
         </View>
     );
 };
