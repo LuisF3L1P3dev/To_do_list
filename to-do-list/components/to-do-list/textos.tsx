@@ -1,17 +1,20 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
+
 interface TextoProps {
-    texto: string;
-    subtitulo?: string;
-    subtitulo2?: string;
+  texto: string;
+  subtitulo?: string;
+  subtitulo2?: string;
 }
 
 function Texto(props: TextoProps) {
   return(
     <Text style={styles.texto}>
       {props.texto}
+
       <Text style={styles.subtitulo}>{props.subtitulo}</Text>
+      
       {props.subtitulo2 && (
         <Text style={styles.subtitulo2}>{props.subtitulo2}</Text>
       )}
@@ -22,7 +25,7 @@ function Texto(props: TextoProps) {
 const styles = StyleSheet.create({
   texto: {
     fontSize: 20,
-    color: 'blue',
+    color: 'yellow',
     fontWeight: 'bold',
     textAlign: 'center',
     marginVertical: 10,
@@ -41,6 +44,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginVertical: 5,
   }
+
 });
 
 export default Texto;
