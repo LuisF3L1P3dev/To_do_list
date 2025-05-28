@@ -9,7 +9,6 @@ interface ExampleProps{
 const Example = ({text, children}: ExampleProps) =>{
 // const Example = (props: ExampleProps) =>{
     // const{ children, text } = props;
-
     return(
         <View>
             <Text style={{color: 'blue'}}>{text}</Text>
